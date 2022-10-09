@@ -25,6 +25,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+#RiceDroid Stuff
+RICE_CHIPSET := Exynos8895
+RICE_MAINTAINER := MiDoNaSR
+RICE_PACKAGE_TYPE := PIXEL
+SUSHI_BOOTANIMATION := 1080
+TARGET_ENABLE_BLUR := true
+TARGET_USE_PIXEL_FINGERPRINT := true
+WITH_GMS := true
+TARGET_OPTOUT_GOOGLE_TELEPHONY := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := dreamlte
 PRODUCT_NAME := lineage_dreamlte

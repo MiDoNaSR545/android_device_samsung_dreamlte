@@ -33,7 +33,7 @@ SUSHI_BOOTANIMATION := 1080
 TARGET_ENABLE_BLUR := true
 TARGET_USE_PIXEL_FINGERPRINT := true
 WITH_GMS := true
-TARGET_OPTOUT_GOOGLE_TELEPHONY := true
+#TARGET_OPTOUT_GOOGLE_TELEPHONY := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := dreamlte

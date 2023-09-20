@@ -23,21 +23,23 @@ $(call inherit-product, device/samsung/dreamlte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-#Ricing Stuff
-RISING_CHIPSET := "Exynos8895"
-RISING_MAINTAINER := "MiDoNaSR"
-RISING_PACKAGE_TYPE := "PIXEL"
+#ProjectBlaze Flags
 TARGET_BUILD_APERTURE_CAMERA := true
-TARGET_ENABLE_BLUR := true
-WITH_GMS := true
-TARGET_OPTOUT_GOOGLE_TELEPHONY := true
 TARGET_USE_PIXEL_FINGERPRINT := true
+BLAZE_MAINTAINER := MiDoNaSR
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := dreamlte
-PRODUCT_NAME := lineage_dreamlte
+PRODUCT_NAME := blaze_dreamlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G950F
 PRODUCT_MANUFACTURER := samsung
